@@ -10,15 +10,18 @@ private:
 	int id;
 	string name;
 	double price;
+	static int auto_id;
+	
 
 public:
+
 	Product() {
 		id;
 		name;
 		price;
 	}
 
-	Product(int product_id, string product_name, double product_price) {
+	Product(int product_id,string product_name, double product_price) {
 		id = product_id;
 		name = product_name;
 		price = product_price;

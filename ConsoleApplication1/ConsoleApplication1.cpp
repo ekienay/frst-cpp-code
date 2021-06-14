@@ -11,7 +11,7 @@ int main()
 {
 	list<Product> list;
 
-	int id;
+	int id = 1;
 	string name;
 	double price;
 
@@ -25,8 +25,6 @@ int main()
 	while (loop == true) {
 
 		cout << endl;
-		cout << "Input id: ";
-		cin >> id;
 		cout << "Input name: ";
 		cin >> name;
 		cout << "Input price: ";
@@ -35,7 +33,7 @@ int main()
 		cout << "---- Press enter to next or esc to show list product's ----" << endl;
 
 		Product product;
-		product.setId(id);
+		product.setId(id++);
 		product.setName(name);
 		product.setPrice(price);
 		list.push_back(product);
@@ -53,7 +51,9 @@ int main()
 				cout << "id: " << it->getId() << endl << "name: " << it->getName() << endl << "price: " << it->getPrice() << endl;
 				cout << "----------------------------------------------------";
 			}
+			
 		}
+
 		loop = true;
 	}
 
