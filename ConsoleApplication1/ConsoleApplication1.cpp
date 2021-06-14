@@ -18,7 +18,7 @@ int main()
 	char ch;
 	bool loop = true;
 
-	cout << "-------------- Press esc to exit --------------" << endl;
+	cout << "-------------- Press esc to show list product's --------------" << endl;
 
 	
 
@@ -32,7 +32,7 @@ int main()
 		cout << "Input price: ";
 		cin >> price;
 		cout << endl;
-		cout << "---- Press enter to next ----" << endl;
+		cout << "---- Press enter to next or esc to show list product's ----" << endl;
 
 		Product product;
 		product.setId(id);
@@ -54,6 +54,7 @@ int main()
 				cout << "----------------------------------------------------";
 			}
 		}
+		loop = true;
 	}
 
 	return 0;
